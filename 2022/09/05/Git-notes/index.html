@@ -1,0 +1,686 @@
+
+<!DOCTYPE html>
+<html lang="zh-CN" class="loading">
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1" />
+    <meta name="viewport" content="width=device-width, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>Git notes - 点亮第一盏芯片</title>
+    <meta name="apple-mobile-web-app-capable" content="yes" />
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <meta name="google" content="notranslate" />
+    <meta name="keywords" content="Fechin,"> 
+    <meta name="description" content="一个刚入门的嵌入式小白的成长历程,1. 常用命令行
+
+cd:#改变目录
+
+cd..#回到上一个目录,直接cd进入默认目录
+
+pwd:#显示当前所在目录路径
+
+ls(ll):#都是列出当前目录中的所有文件,只不过**ll**列出的内容,"> 
+    <meta name="author" content="不会点灯的Xida"> 
+    <link rel="alternative" href="atom.xml" title="点亮第一盏芯片" type="application/atom+xml"> 
+    <link rel="icon" href="/img/favicon_0.png"> 
+    
+    
+    
+    <meta name="twitter:card" content="summary"/>
+    <meta name="twitter:title" content="Git notes - 点亮第一盏芯片"/>
+    <meta name="twitter:description" content="一个刚入门的嵌入式小白的成长历程,1. 常用命令行
+
+cd:#改变目录
+
+cd..#回到上一个目录,直接cd进入默认目录
+
+pwd:#显示当前所在目录路径
+
+ls(ll):#都是列出当前目录中的所有文件,只不过**ll**列出的内容,"/>
+    
+    
+    
+    
+    <meta property="og:site_name" content="点亮第一盏芯片"/>
+    <meta property="og:type" content="object"/>
+    <meta property="og:title" content="Git notes - 点亮第一盏芯片"/>
+    <meta property="og:description" content="一个刚入门的嵌入式小白的成长历程,1. 常用命令行
+
+cd:#改变目录
+
+cd..#回到上一个目录,直接cd进入默认目录
+
+pwd:#显示当前所在目录路径
+
+ls(ll):#都是列出当前目录中的所有文件,只不过**ll**列出的内容,"/>
+    
+<link rel="stylesheet" href="/css/diaspora.css">
+
+    <script>window.searchDbPath = "/search.xml";</script>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Source+Code+Pro&display=swap" rel="stylesheet">
+<meta name="generator" content="Hexo 6.2.0"></head>
+
+<body class="loading">
+    <span id="config-title" style="display:none">点亮第一盏芯片</span>
+    <div id="loader"></div>
+    <div id="single">
+    <div id="top" style="display: block;">
+    <div class="bar" style="width: 0;"></div>
+    <a class="iconfont icon-home image-icon" href="javascript:;" data-url="https://www.yoursite.com"></a>
+    <div title="播放/暂停" class="iconfont icon-play"></div>
+    <h3 class="subtitle">Git notes</h3>
+    <div class="social">
+        <div>
+            <div class="share">
+                <a title="获取二维码" class="iconfont icon-scan" href="javascript:;"></a>
+            </div>
+            <div id="qr"></div>
+        </div>
+    </div>
+    <div class="scrollbar"></div>
+</div>
+
+    <div class="section">
+        <div class="article">
+    <div class='main'>
+        <h1 class="title">Git notes</h1>
+        <div class="stuff">
+            <span>九月 05, 2022</span>
+            
+  <ul class="post-tags-list" itemprop="keywords"><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/Git/" rel="tag">Git</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E5%91%BD%E4%BB%A4%E8%A1%8C/" rel="tag">命令行</a></li><li class="post-tags-list-item"><a class="post-tags-list-link" href="/tags/%E7%AC%94%E8%AE%B0/" rel="tag">笔记</a></li></ul>
+
+
+        </div>
+        <div class="content markdown">
+            <h2 id="1-常用命令行"><a href="#1-常用命令行" class="headerlink" title="1. 常用命令行"></a>1. 常用命令行</h2><blockquote>
+<ul>
+<li><p><code>cd:#改变目录</code></p>
+</li>
+<li><p><code>cd..#回到上一个目录,直接cd进入默认目录</code></p>
+</li>
+<li><p><code>pwd:#显示当前所在目录路径</code></p>
+</li>
+<li><p><code>ls(ll):#都是列出当前目录中的所有文件,只不过**ll**列出的内容更为详细</code></p>
+</li>
+<li><p><code>mkdir:新建一个目录,就是新建一个文件夹</code></p>
+</li>
+<li><p><code>touch:新建文件</code></p>
+</li>
+<li><p><code>rm:删除文件</code></p>
+</li>
+<li><p><code>rm -r:删除一个文件夹,rm -r src 删除src目录</code></p>
+<pre><code class="python">rm -rf / #删除所有文件
+</code></pre>
+</li>
+<li><p><code>mv:移动文件,mv test.c src test.c 必须保证目标目录与目标文件在同一目录下</code></p>
+</li>
+<li><p><code>reset/(clear):重新初始化终端/清屏(clear也是清屏)</code></p>
+</li>
+<li><p><code>history:查看历史命令</code></p>
+</li>
+<li><p><code>help:帮助</code></p>
+</li>
+<li><p><code>exit:退出</code></p>
+</li>
+</ul>
+</blockquote>
+<hr>
+<hr>
+<h2 id="2-Git操作"><a href="#2-Git操作" class="headerlink" title="2. Git操作"></a>2. Git操作</h2><h3 id="2-1-Git配置"><a href="#2-1-Git配置" class="headerlink" title="2.1 Git配置"></a>2.1 Git配置</h3><blockquote>
+<p>所有的配置文件,其实都保存在本地</p>
+</blockquote>
+<blockquote>
+<ul>
+<li>&#x3D;&#x3D;<code>git config -l</code>:查看配置&#x3D;&#x3D;</li>
+</ul>
+</blockquote>
+<pre><code class="python">#查看系统config
+git config --system --list
+
+#查看当前用户(global)配置
+git config --global --list
+</code></pre>
+<blockquote>
+<p>&#x3D;&#x3D;设置用户名与邮箱(用户表示,必要)&#x3D;&#x3D;</p>
+</blockquote>
+<hr>
+<h3 id="2-2-Git项目搭建"><a href="#2-2-Git项目搭建" class="headerlink" title="2.2 Git项目搭建"></a>2.2 Git项目搭建</h3><blockquote>
+<p>新建Git项目</p>
+</blockquote>
+<pre><code class="python">$ git init
+#执行之后可以看到仅仅在项目目录多出了个.git目录,关于版本等所有信息都在这个目录中
+</code></pre>
+<blockquote>
+<p>克隆远程仓库</p>
+</blockquote>
+<pre><code class="python">$ git clone https://...
+#克隆一个项目和他的整段代码历史（版本信息）
+</code></pre>
+<hr>
+<h3 id="2-3-git操作流程"><a href="#2-3-git操作流程" class="headerlink" title="2.3 git操作流程"></a>2.3 git操作流程</h3><pre><code class="python">$ touch file.txt #创建名为file.txt的文件
+$ vi file.txt    #在git bash 下对文件 file.txt进行修改
+$ git add .      #将所有修改推到缓存区，指定文件推送为git add file.txt
+$ git commit -m &quot;注释&quot; #将缓存区文件推到仓库中
+$ git log		#查看仓库修改历史
+</code></pre>
+<blockquote>
+<ul>
+<li><strong>&#x3D;&#x3D;<code>git log:</code>&#x3D;&#x3D;</strong></li>
+</ul>
+</blockquote>
+<pre><code class="python">$ git log --all					#显示所有分支
+$ git log --pretty=oneline		 #将提交信息显示为一行
+$ git log --abbrev-commit		 #使得输出的commitld更简短
+$ git log --graph				#以图的形式显示
+</code></pre>
+<blockquote>
+<ul>
+<li><strong>&#x3D;&#x3D;<code>git reset</code>&#x3D;&#x3D;</strong></li>
+</ul>
+</blockquote>
+<pre><code class="python">$ git reset --hard commitID
+</code></pre>
+<blockquote>
+<ul>
+<li>&#x3D;&#x3D;**<code>git reflog</code>**：回退找寻已reset版本&#x3D;&#x3D;</li>
+</ul>
+</blockquote>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbJdp.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #666;
+    padding: 2px;">
+      git reflog示例
+      </div>
+</center>
+
+
+
+<hr>
+<blockquote>
+<ul>
+<li>&#x3D;&#x3D;<strong><code>touch .gitignore</code></strong>:在该文件中添加文件名，表示不需要git进行管理的文件，即添加文件到忽略列表&#x3D;&#x3D;</li>
+</ul>
+</blockquote>
+<pre><code class="python">#such as
+*.a		#在.gitignore中添加表示&#39;.a&#39;类型的文件不加入到缓存区
+</code></pre>
+<hr>
+<h3 id="2-4-git分支创建、查找、删除、合并-注-1"><a href="#2-4-git分支创建、查找、删除、合并-注-1" class="headerlink" title="2.4 git分支创建、查找、删除、合并^ 注.1"></a>2.4 git分支创建、查找、删除、合并<a href="%E6%87%92%E5%BE%97%E6%95%B2%E4%BA%86%E7%9B%B4%E6%8E%A5%E6%88%AA%E7%9A%84%E5%9B%BE%EF%BC%8C%E6%95%88%E6%9E%9C%E4%B8%80%E6%A0%B7">^ 注.1</a></h3><blockquote>
+<ul>
+<li>&#x3D;&#x3D;<strong><code>git branch</code></strong>:查找分支以及创建分支&#x3D;&#x3D;</li>
+</ul>
+</blockquote>
+<pre><code class="python">$ git branch
+* master
+$ git branch dev01
+$ git branch
+ dev01
+* master	
+</code></pre>
+<hr>
+<blockquote>
+<ul>
+<li><p>&#x3D;&#x3D;<strong><code>*git checkout</code></strong>:切换分支&#x3D;&#x3D;</p>
+</li>
+<li><p>&#x3D;&#x3D;（<code>git checkout -b</code>:创建新分支并立即切换到该分支下，从而在该分支中操作。）&#x3D;&#x3D;</p>
+</li>
+</ul>
+</blockquote>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbNOS.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      切换到dev01分支
+      </div>
+</center>
+
+
+
+<hr>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vb1da.png"width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+     切换回master分支
+      </div>
+</center>
+
+
+
+<hr>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbnvK.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      git checkout -b创建dev02并转到该分支(强制删除)
+      </div>
+</center>
+
+
+
+<hr>
+<blockquote>
+<ul>
+<li>&#x3D;&#x3D;<code>git branch -D/d</code>:从other&#x2F;master分支上删除分支&#x3D;&#x3D;<a href="%E6%87%92%E5%BE%97%E6%95%B2%E4%BA%86%E7%9B%B4%E6%8E%A5%E6%88%AA%E7%9A%84%E5%9B%BE%EF%BC%8C%E6%95%88%E6%9E%9C%E4%B8%80%E6%A0%B7">^ 注.1</a></li>
+</ul>
+</blockquote>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbF9B.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      git branch -D从dev01分支上删除dev02分支
+      </div>
+</center>
+
+
+
+<hr>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbiTs.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      git branch -d在master分支上删除dev02
+      </div>
+</center>
+
+
+
+<blockquote>
+<ul>
+<li>&#x3D;&#x3D;<code>*git merge</code>:分支的合并&#x3D;&#x3D;</li>
+</ul>
+</blockquote>
+<blockquote>
+<blockquote>
+<p><strong>查看当前分支</strong></p>
+</blockquote>
+</blockquote>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbeNN.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      查看目前分支所在位置
+      </div>
+</center>
+
+
+
+<blockquote>
+<blockquote>
+<p><strong>切换到master分支</strong></p>
+</blockquote>
+</blockquote>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbrLC.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      切换到master分支
+      </div>
+</center>
+
+
+
+<blockquote>
+<blockquote>
+<p><strong>合并分支</strong></p>
+</blockquote>
+</blockquote>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbAuL.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      将dev01合并到master分支
+      </div>
+</center>
+
+
+
+<hr>
+<h3 id="2-5-分支合并冲突解决"><a href="#2-5-分支合并冲突解决" class="headerlink" title="2.5 *分支合并冲突解决"></a>2.5 *分支合并冲突解决</h3><p>&#x3D;&#x3D;分支与主干合并时，当同一行出现冲突时，需要手动修改决定需要保存的版本，之后再进行提交&#x3D;&#x3D;</p>
+<hr>
+<hr>
+<h2 id="3-开发中分支使用原则与流程"><a href="#3-开发中分支使用原则与流程" class="headerlink" title="3. 开发中分支使用原则与流程"></a>3. 开发中分支使用原则与流程</h2><blockquote>
+<ul>
+<li><p>master(生产分支)</p>
+<p>线上分支，主分支，中小规模项目作为线上运行的应用对应的分支：</p>
+</li>
+<li><p>develop(开发分支)</p>
+<p>是从master常见的分支，一般作为开发部门的主要开发分支，如果没有其他并行开发不同期上线要求，都可以在此版本进行开发，阶段开发完成后，需要是合并到master分支准备上线</p>
+</li>
+<li><p>feature&#x2F;xxxx分支</p>
+<p>从develop创建的分支，一般时同期并行开发，但不同期上线是创建的分支，分支上的研发任务完成后合并后到develop分支</p>
+</li>
+<li><p>hotfix&#x2F;xxxx分支</p>
+<p>从master派生的分支，一般作为线上bug修复使用，修复完成后需要合并到master、test、develop分支</p>
+</li>
+<li><p>还有一些其他分支如test(测试分支)、pre（预上线分支）等等</p>
+<hr>
+<hr>
+</li>
+</ul>
+</blockquote>
+<h2 id="4-Git远程仓库"><a href="#4-Git远程仓库" class="headerlink" title="4.Git远程仓库"></a>4.Git远程仓库</h2><h3 id="4-1配置SSH公钥"><a href="#4-1配置SSH公钥" class="headerlink" title="4.1配置SSH公钥"></a>4.1配置SSH公钥</h3><blockquote>
+<ul>
+<li><p>生成SSH公钥</p>
+<ul>
+<li><pre><code class="shell">$ ssh-keygen -t rsa -C &quot;your_email@your_email.com&quot;
+</code></pre>
+</li>
+<li><p>不断回车</p>
+</li>
+</ul>
+</li>
+<li><p>如果公钥已存在则会自动覆盖</p>
+</li>
+<li><p>设置账户共公钥</p>
+<ul>
+<li><p>获取公钥</p>
+<ul>
+<li><pre><code class="shell">$ cat ~/.ssh/id_rsa.pub
+</code></pre>
+</li>
+</ul>
+</li>
+<li><p>复制公钥</p>
+</li>
+<li><p>将复制的公钥配置到github上</p>
+</li>
+</ul>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbZFi.jpg" width = "75%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+        进入 Account => Settings（账户配置）   
+     </div>
+</center></li>
+</ul>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbvPX.jpg" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      选择SSH and GPG keys
+      </div>
+</center>
+
+<center>
+   <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vby9t.jpg" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      粘贴生成的 key
+      </div>
+</center>
+
+<center>
+   <img style="border-radius: 0.3125em;
+   box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/09/05/vbmUx.jpg" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      添加完之后的界面
+      </div>
+</center>
+
+<ul>
+<li>验证是否成功</li>
+</ul>
+<pre><code class="shell"> $ ssh -T git@github.com
+The authenticity of host &#39;github.com (52.74.223.119)&#39; can&#39;t be established.
+ RSA key fingerprint is SHA256:nThbg6kXUpJWGl7E1IGOCspRomTxdCARLviKw6E5SY8.
+ Are you sure you want to continue connecting (yes/no/[fingerprint])? yes                   # 输入 yes
+ Warning: Permanently added &#39;github.com,52.74.223.119&#39; (RSA) to the list of known hosts.
+ Hi tianqixin! You&#39;ve successfully authenticated, but GitHub does not provide shell access. # 成功信息
+ ```
+
+ ___
+</code></pre>
+</blockquote>
+<h3 id="4-2-连接仓库"><a href="#4-2-连接仓库" class="headerlink" title="4.2 连接仓库"></a>4.2 连接仓库</h3><blockquote>
+<ul>
+<li>创建GitHub仓库</li>
+<li>push本地仓库</li>
+</ul>
+<pre><code class="shell">$ mkdir runoob-git-test                     # 创建测试目录
+$ cd runoob-git-test/                       # 进入测试目录
+$ echo &quot;# 菜鸟教程 Git 测试&quot; &gt;&gt; README.md     # 创建 README.md 文件并写入内容
+$ ls                                        # 查看目录下的文件
+README
+$ git init                                  # 初始化
+$ git add README.md                         # 添加文件
+$ git commit -m &quot;添加 README.md 文件&quot;        # 提交并备注信息
+[master (root-commit) 0205aab] 添加 README.md 文件
+ 1 file changed, 1 insertion(+)
+ create mode 100644 README.md
+
+# 提交到 Github
+$ git remote add origin &quot;github仓库地址&quot;
+$ git push -u origin master
+</code></pre>
+<ul>
+<li><p>查看当前配置仓库</p>
+<pre><code class="shell">$ git remote
+origin
+$ git remote -v				#执行时加上 -v 参数，你还可以看到每个别名的实际链接地址。
+origin    git@github.com:tianqixin/runoob-git-test.git (fetch)
+origin    git@github.com:tianqixin/runoob-git-test.git (push)
+$ git remote rm [别名]	   #删除远程仓库
+</code></pre>
+</li>
+<li><p>提取远程仓库的更新</p>
+<pre><code class="shell">$ git fetch origin
+remote: Counting objects: 3, done.
+remote: Compressing objects: 100% (2/2), done.
+remote: Total 3 (delta 0), reused 0 (delta 0), pack-reused 0
+Unpacking objects: 100% (3/3), done.
+From github.com:tianqixin/runoob-git-test
+   0205aab..febd8ed  master     -&gt; origin/master
+</code></pre>
+</li>
+<li><p>同步到本地</p>
+</li>
+<li><pre><code class="shell">$ git merge origin/master
+Updating 0205aab..febd8ed
+Fast-forward
+ README.md | 1 +
+ 1 file changed, 1 insertion(+)
+</code></pre>
+<pre><code class="shell">$ git push [alias] [branch]
+# 将你的 [branch] 分支推送成为 [alias] 远程仓库上的 [branch] 分支
+</code></pre>
+<hr>
+</li>
+</ul>
+</blockquote>
+<h2 id="5-Git推送远程仓库时问题合集"><a href="#5-Git推送远程仓库时问题合集" class="headerlink" title="5.Git推送远程仓库时问题合集"></a>5.Git推送远程仓库时问题合集</h2><h3 id="5-1推送分支出问题"><a href="#5-1推送分支出问题" class="headerlink" title="5.1推送分支出问题"></a>5.1推送分支出问题</h3><blockquote>
+<p><code>error: failed to push some refs to &#39;https://github.com/hanxida/Github.git&#39;</code></p>
+<center>
+<img style="border-radius: 0.3125em;
+box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+src="https://i.imgtg.com/2022/09/05/vbpvj.png" width = "70%" alt=""/>
+<br>
+<div style="color:orange; border-bottom: 1px solid #d9d9d9;
+display: inline-block;
+color: #999;
+padding: 2px;">
+错误截图
+    </div>
+</center>
+
+
+
+<p>原因：本地与远程仓库未同步</p>
+</blockquote>
+
+            <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
+            <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
+                <source type="audio/mpeg" src="">
+            </audio>
+            
+                <ul id="audio-list" style="display:none">
+                    
+                        
+                            <li title="0" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                        
+                            <li title="1" data-url="http://link.hhtjim.com/163/425570952.mp3"></li>
+                        
+                    
+                </ul>
+            
+        </div>
+        
+        
+    <div id="gitalk-container" class="comment link"
+		data-enable="false"
+        data-ae="false"
+        data-ci=""
+        data-cs=""
+        data-r="hanxida.github.io"
+        data-o="hanxida"
+        data-a="hanxida"
+        data-d="false"
+    >查看评论</div>
+
+
+    </div>
+    
+</div>
+
+
+    </div>
+</div>
+</body>
+
+
+<script src="//lib.baomitu.com/jquery/1.8.3/jquery.min.js"></script>
+<script src="/js/plugin.js"></script>
+<script src="/js/typed.js"></script>
+<script src="/js/diaspora.js"></script>
+
+
+<link rel="stylesheet" href="/photoswipe/photoswipe.css">
+<link rel="stylesheet" href="/photoswipe/default-skin/default-skin.css">
+
+
+<script src="/photoswipe/photoswipe.min.js"></script>
+<script src="/photoswipe/photoswipe-ui-default.min.js"></script>
+
+
+<!-- Root element of PhotoSwipe. Must have class pswp. -->
+<div class="pswp" tabindex="-1" role="dialog" aria-hidden="true">
+    <!-- Background of PhotoSwipe. 
+         It's a separate element as animating opacity is faster than rgba(). -->
+    <div class="pswp__bg"></div>
+    <!-- Slides wrapper with overflow:hidden. -->
+    <div class="pswp__scroll-wrap">
+        <!-- Container that holds slides. 
+            PhotoSwipe keeps only 3 of them in the DOM to save memory.
+            Don't modify these 3 pswp__item elements, data is added later on. -->
+        <div class="pswp__container">
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+            <div class="pswp__item"></div>
+        </div>
+        <!-- Default (PhotoSwipeUI_Default) interface on top of sliding area. Can be changed. -->
+        <div class="pswp__ui pswp__ui--hidden">
+            <div class="pswp__top-bar">
+                <!--  Controls are self-explanatory. Order can be changed. -->
+                <div class="pswp__counter"></div>
+                <button class="pswp__button pswp__button--close" title="Close (Esc)"></button>
+                <button class="pswp__button pswp__button--share" title="Share"></button>
+                <button class="pswp__button pswp__button--fs" title="Toggle fullscreen"></button>
+                <button class="pswp__button pswp__button--zoom" title="Zoom in/out"></button>
+                <!-- Preloader demo http://codepen.io/dimsemenov/pen/yyBWoR -->
+                <!-- element will get class pswp__preloader--active when preloader is running -->
+                <div class="pswp__preloader">
+                    <div class="pswp__preloader__icn">
+                      <div class="pswp__preloader__cut">
+                        <div class="pswp__preloader__donut"></div>
+                      </div>
+                    </div>
+                </div>
+            </div>
+            <div class="pswp__share-modal pswp__share-modal--hidden pswp__single-tap">
+                <div class="pswp__share-tooltip"></div> 
+            </div>
+            <button class="pswp__button pswp__button--arrow--left" title="Previous (arrow left)">
+            </button>
+            <button class="pswp__button pswp__button--arrow--right" title="Next (arrow right)">
+            </button>
+            <div class="pswp__caption">
+                <div class="pswp__caption__center"></div>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+
+
+</html>

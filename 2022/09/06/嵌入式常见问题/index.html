@@ -10,13 +10,13 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="一个刚入门的嵌入式小白的成长历程,
+    <meta name="description" content="一个刚入门的嵌入式小白的成长历程,一些嵌入式问题，其中大多数来自牛客网面试题
+
 以下方法可以用来检测栈泄露的是
 
 
 - [] A:将栈放在SRAM控件接近底部的区域
-- [] B:利用MPU再栈尾空间定义一个小的，不可访问或者制度的存储器区域
-- [] C:若使用调试期及逆行,"> 
+- [] B:利用MPU再栈尾空间定义一个小的，不可访问或者制度的,"> 
     <meta name="author" content="不会点灯的Xida"> 
     <link rel="alternative" href="atom.xml" title="点亮第一盏芯片" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon_0.png"> 
@@ -25,13 +25,13 @@
     
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:title" content="嵌入式常见问题 - 点亮第一盏芯片"/>
-    <meta name="twitter:description" content="一个刚入门的嵌入式小白的成长历程,
+    <meta name="twitter:description" content="一个刚入门的嵌入式小白的成长历程,一些嵌入式问题，其中大多数来自牛客网面试题
+
 以下方法可以用来检测栈泄露的是
 
 
 - [] A:将栈放在SRAM控件接近底部的区域
-- [] B:利用MPU再栈尾空间定义一个小的，不可访问或者制度的存储器区域
-- [] C:若使用调试期及逆行,"/>
+- [] B:利用MPU再栈尾空间定义一个小的，不可访问或者制度的,"/>
     
     
     
@@ -39,13 +39,13 @@
     <meta property="og:site_name" content="点亮第一盏芯片"/>
     <meta property="og:type" content="object"/>
     <meta property="og:title" content="嵌入式常见问题 - 点亮第一盏芯片"/>
-    <meta property="og:description" content="一个刚入门的嵌入式小白的成长历程,
+    <meta property="og:description" content="一个刚入门的嵌入式小白的成长历程,一些嵌入式问题，其中大多数来自牛客网面试题
+
 以下方法可以用来检测栈泄露的是
 
 
 - [] A:将栈放在SRAM控件接近底部的区域
-- [] B:利用MPU再栈尾空间定义一个小的，不可访问或者制度的存储器区域
-- [] C:若使用调试期及逆行,"/>
+- [] B:利用MPU再栈尾空间定义一个小的，不可访问或者制度的,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -87,9 +87,10 @@
 
         </div>
         <div class="content markdown">
-            <ul>
+            <p><font face="宋体" color="white" size=5>一些嵌入式问题，其中大多数来自牛客网面试题</font></p>
+<ol>
 <li><code>以下方法可以用来检测栈泄露的是</code></li>
-</ul>
+</ol>
 <blockquote>
 <pre><code class="markdown">- [] A:将栈放在SRAM控件接近底部的区域
 - [] B:利用MPU再栈尾空间定义一个小的，不可访问或者制度的存储器区域
@@ -97,32 +98,31 @@
 - [x] D:以上选项均正确
 </code></pre>
 <p><strong><code>选项解析</code></strong></p>
-<p><font face="宋体" color="red" size=小四>选项A：当所有栈全部被使用时，此时再使用站，会导致其入栈操作超出SRAM区域，导致操作了不合法的存储器区域，从而触发了总线的错误额，就会执行错误处理</font></p>
-<p><font face="宋体" color="red" size=小四>选型B：该方法与A类似，都在栈尾部区域做处理，该选项中，若产生栈溢出，则会出发MeManage错误异常</font></p>
-<p><font face="宋体" color="red" size=小四>选型C：当栈空间使用完毕后，因设置的数据监视点而导致处理器暂停</font></p>
-<p><font face="宋体" color="red" size=小四>选型D：程序开发人员应该在代码设计时提供足够的栈空间，keil工具在代码编译完成后，会生成许多报告文件，这些文件中有一个是html文件，该文件提供的信息包含函数最多使用的栈，通常代码编译完成后，需要查看该文件来对栈进行适当调整</font></p>
+<p><font face="宋体" color="red" size=3>选项A：当所有栈全部被使用时，此时再使用站，会导致其入栈操作超出SRAM区域，导致操作了不合法的存储器区域，从而触发了总线的错误额，就会执行错误处理</font></p>
+<p><font face="宋体" color="red" size=3>选型B：该方法与A类似，都在栈尾部区域做处理，该选项中，若产生栈溢出，则会出发MeManage错误异常</font></p>
+<p><font face="宋体" color="red" size=3>选型C：当栈空间使用完毕后，因设置的数据监视点而导致处理器暂停</font></p>
+<p><font face="宋体" color="red" size=3>选型D：程序开发人员应该在代码设计时提供足够的栈空间，keil工具在代码编译完成后，会生成许多报告文件，这些文件中有一个是html文件，该文件提供的信息包含函数最多使用的栈，通常代码编译完成后，需要查看该文件来对栈进行适当调整</font></p>
 </blockquote>
-<ul>
+<ol start="2">
 <li><code>MCS-51单片机复位后程序计数器PC?</code></li>
-</ul>
+</ol>
 <blockquote>
-<p><font face="宋体" color="red" size=小四>复位后PC&#x3D;0000H</font></p>
+<p><font face="宋体" color="red" size=3>复位后PC&#x3D;0000H</font></p>
 </blockquote>
-<ul>
-<li><p><code>8031单片机中片内RAM共有__字节</code></p>
-<p><del>可能有误还未完全查证</del></p>
-</li>
-</ul>
+<ol start="3">
+<li><code>8031单片机中片内RAM共有__字节</code></li>
+</ol>
+<p>​    <del>可能有误还未完全查证</del></p>
 <blockquote>
-<p><font face="宋体" color="red" size=小四>8031片内RAM指 00H ~ 7FH 单元这128个字节 16位 内部没有ROM</font></p>
-<p><font face="宋体" color="red" size=小四>8051片内RAM指 00H ~ 7FH 单元这128个字节 16位 内部4k的ROM</font></p>
-<p><font face="宋体" color="red" size=小四>8052片内RAM指 00H ~ FFH 单元这256个字节 32位 內部8k的ROM</font></p>
+<p><font face="宋体" color="red" size=3>8031片内RAM指 00H ~ 7FH 单元这128个字节 16位 内部没有ROM</font></p>
+<p><font face="宋体" color="red" size=3>8051片内RAM指 00H ~ 7FH 单元这128个字节 16位 内部4k的ROM</font></p>
+<p><font face="宋体" color="red" size=3>8052片内RAM指 00H ~ FFH 单元这256个字节 32位 內部8k的ROM</font></p>
 </blockquote>
-<ul>
+<ol start="4">
 <li><code>MCS-51系列单片机扩展存储器芯片时，4个IO口中作为地址总线的是？</code></li>
-</ul>
+</ol>
 <blockquote>
-<p><font face="宋体" color="red" size=小四>P0口和P2口，P0复用为地址总线低8位，P2为高8位</font></p>
+<p><font face="宋体" color="red" size=3>P0口和P2口，P0复用为地址总线低8位，P2为高8位</font></p>
 </blockquote>
 <center>
     <img style="border-radius: 0.3125em;
@@ -136,7 +136,23 @@
       51内核总线引证
       </div>
 </center>
+5. `STM32定时器描述错误的是`
 
+<blockquote>
+<pre><code class="markdown">- [] A: STM32只有高级定时器，通用定时器和基本定时器，systic滴答时钟定时器
+- [] B: 定时器功能强大，其可用于输入捕获，输出比较，PWM生成，单脉冲输出
+- [] C: 可以灵活配置定时器的时钟源，如内部时钟，外部时钟1，外部时钟2，内部触发输入
+- [x] D: 通用定时器只能向上计数
+</code></pre>
+<p><strong><code>选项解析</code></strong></p>
+<p><font face="宋体" color="red" size=3>高级定时器和通用定时器可以向上或向下计数，基本定时器支持向上计数</font></p>
+</blockquote>
+<ol start="6">
+<li><code>累加器A的内容是45H，执行SWAP  A指令后累加器的内容变为</code></li>
+</ol>
+<blockquote>
+<p><font face="宋体" color="red" size=3>SWAP指令功能为寄存器A中的数据的高4位与低四位进行交换，故交换后A中内容为54H</font></p>
+</blockquote>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">

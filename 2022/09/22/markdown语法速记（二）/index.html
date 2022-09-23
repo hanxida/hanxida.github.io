@@ -10,11 +10,9 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="一个刚入门的嵌入式小白的成长历程,链接的高级操作
-
-内容目录：[toc]:在段落中填写 [TOC] 以显示全文内容的目录结构
-
-锚点：锚点其实就是页内超链接。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节,"> 
+    <meta name="description" content="一个刚入门的嵌入式小白的成长历程,背景色
+Markdown本身不支持背景色设置，需要采用内置html的方式实现：借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。举例如下：
+&amp;lt;table&amp;,"> 
     <meta name="author" content="不会点灯的Xida"> 
     <link rel="alternative" href="atom.xml" title="点亮第一盏芯片" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon_0.png"> 
@@ -23,11 +21,9 @@
     
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:title" content="markdown语法速记（二） - 点亮第一盏芯片"/>
-    <meta name="twitter:description" content="一个刚入门的嵌入式小白的成长历程,链接的高级操作
-
-内容目录：[toc]:在段落中填写 [TOC] 以显示全文内容的目录结构
-
-锚点：锚点其实就是页内超链接。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节,"/>
+    <meta name="twitter:description" content="一个刚入门的嵌入式小白的成长历程,背景色
+Markdown本身不支持背景色设置，需要采用内置html的方式实现：借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。举例如下：
+&amp;lt;table&amp;,"/>
     
     
     
@@ -35,11 +31,9 @@
     <meta property="og:site_name" content="点亮第一盏芯片"/>
     <meta property="og:type" content="object"/>
     <meta property="og:title" content="markdown语法速记（二） - 点亮第一盏芯片"/>
-    <meta property="og:description" content="一个刚入门的嵌入式小白的成长历程,链接的高级操作
-
-内容目录：[toc]:在段落中填写 [TOC] 以显示全文内容的目录结构
-
-锚点：锚点其实就是页内超链接。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节,"/>
+    <meta property="og:description" content="一个刚入门的嵌入式小白的成长历程,背景色
+Markdown本身不支持背景色设置，需要采用内置html的方式实现：借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。举例如下：
+&amp;lt;table&amp;,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -85,15 +79,43 @@
 
         </div>
         <div class="content markdown">
-            <h4 id="链接的高级操作"><a href="#链接的高级操作" class="headerlink" title="链接的高级操作"></a>链接的高级操作</h4><blockquote>
+            <h4 id="背景色"><a href="#背景色" class="headerlink" title="背景色"></a>背景色</h4><blockquote>
+<pre><code class="html">Markdown本身不支持背景色设置，需要采用内置html的方式实现：借助 table, tr, td 等表格标签的 bgcolor 属性来实现背景色的功能。举例如下：
+&lt;table&gt;&lt;tr&gt;&lt;td bgcolor=orange&gt;背景色是：orange&lt;/td&gt;&lt;/tr&gt;&lt;/table&gt;
+</code></pre>
+<table><tr><td bgcolor=green>背景色是：green</td></tr></table>
+</blockquote>
+<hr>
+<hr>
+<h4 id="Toda列表"><a href="#Toda列表" class="headerlink" title="Toda列表"></a>Toda列表</h4><blockquote>
+<pre><code class="markdown">- [ ] 事情1
+- [ ] 事情2
+- [ ] 事情3
+- [ ] 事情3
+</code></pre>
 <ul>
-<li><p>内容目录：<code>[toc]</code>:在段落中填写 [TOC] 以显示全文内容的目录结构</p>
-</li>
-<li><p>锚点：锚点其实就是页内超链接。比如我这里写下一个锚点，点击回到目录，就能跳转到目录。 在目录中点击这一节，就能跳过来。</p>
-<p>&#96;&#96;&#96;markdown<br>目录</p>
-</li>
+<li><input disabled="" type="checkbox"> 事情1</li>
+<li><input checked="" disabled="" type="checkbox"> 事情2</li>
+<li><input disabled="" type="checkbox"> 事情3</li>
+<li><input checked="" disabled="" type="checkbox"> 事情3</li>
 </ul>
 </blockquote>
+<hr>
+<hr>
+<h4 id="图片"><a href="#图片" class="headerlink" title="图片"></a>图片</h4><pre><code class="html">&lt;!--基于html语法的图片插入(带图注)--&gt;
+&lt;center&gt;
+    &lt;img style=&quot;border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);&quot; 
+    src=&quot;---在这里插入图片地址---&quot; width = &quot;70%&quot; alt=&quot;&quot;/&gt;
+    &lt;br&gt;
+    &lt;div style=&quot;color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;&quot;&gt;
+      在这里插入图片注释
+      &lt;/div&gt;
+&lt;/center&gt;
+</code></pre>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">

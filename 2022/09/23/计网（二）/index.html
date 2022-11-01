@@ -82,12 +82,43 @@
 
         </div>
         <div class="content markdown">
-            <h4 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h4><blockquote>
+            <h2 id="物理层"><a href="#物理层" class="headerlink" title="物理层"></a>物理层</h2><blockquote>
 <p><strong>学习目的：</strong>了解物理层的基本功能，掌握各种传输媒体的特性、熟练掌握奈氏公式和香农公式，以及各种传输媒体的特性，掌握曼彻斯特编码和差分曼彻斯特编码。掌握基本的复用技术、编码技术、交换技术。</p>
 <hr>
 <p><strong>学习重点：</strong>奈氏公式和香农公式，曼彻斯特编码和差分曼彻斯特编码及不归零码。</p>
 <hr>
 <p><strong>学习难点</strong>：<code>奈氏公式</code>和<code>香农公式</code>，<code>曼彻斯特编码</code>和<code>差分曼彻斯特编码</code>及<code>不归零码</code>。</p>
+</blockquote>
+<h4 id="奈奎斯特-Nyquist-定理"><a href="#奈奎斯特-Nyquist-定理" class="headerlink" title="奈奎斯特(Nyquist)定理"></a>奈奎斯特(Nyquist)定理</h4><ul>
+<li>无噪声下的<strong>码元速率极限值B</strong>与<strong>信道带宽W</strong>的关系</li>
+</ul>
+<p>$$<br>B&#x3D;2*W(Baud)<br>$$</p>
+<ul>
+<li>奈奎斯特公式：</li>
+</ul>
+<p>$$<br>C&#x3D;2Wlog_2V(b&#x2F;s)<br>$$</p>
+<blockquote>
+<p><font color = DodgerBlue>C：理想低通信道下的极限数据传输率</font></p>
+<p><font color = DodgerBlue>W：为理想低通信道的带宽（即 信道传输上、下限频率的差值，单位为Hz）</font></p>
+<p><font color = DodgerBlue>V：为一个码元所取的离散值个数</font></p>
+</blockquote>
+<ul>
+<li>波特率与数据传输速率直接的关系</li>
+</ul>
+<p>$$<br>C&#x3D;Blog_2V(b&#x2F;s)<br>$$</p>
+<blockquote>
+<p><font color = DodgerBlue>B：为极限码元传输率</font></p>
+</blockquote>
+<h5 id="作业"><a href="#作业" class="headerlink" title="作业"></a>作业</h5><blockquote>
+<ol>
+<li>第二章课后第二题</li>
+</ol>
+<pre><code class="shell"># 每1毫秒对一条无噪声4kHz信道采样一次。试问最大数据传输率是多少？如果信道上有噪声，且信噪比是30dB，试问最大数据速率将如何变化？
+</code></pre>
+<p>$$<br>\because信噪比（dB）&#x3D;10log_{10}(\frac{S}{N})（dB）<br>$$</p>
+<p>$$<br>\therefore\frac{S}{N}&#x3D;1000<br>$$</p>
+<p>$$<br>\because C&#x3D;Wlog_{2}(1+\frac{S}{N} )（单位为b&#x2F;s）<br>$$</p>
+<p>$$<br>\therefore<br>$$</p>
 </blockquote>
 
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->

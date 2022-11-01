@@ -10,7 +10,10 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
     <meta name="google" content="notranslate" />
     <meta name="keywords" content="Fechin,"> 
-    <meta name="description" content="一个刚入门的嵌入式小白的成长历程,"> 
+    <meta name="description" content="一个刚入门的嵌入式小白的成长历程,第一章     计算机操作系统概述总线：
+总线（Bus）是计算机各种功能部件之间传送信息的公共通信干线，它是CPU、内存、输入输出设备传递信息的公用通道
+
+计算机的各个部件通过总线相连接，外围设备通,"> 
     <meta name="author" content="不会点灯的Xida"> 
     <link rel="alternative" href="atom.xml" title="点亮第一盏芯片" type="application/atom+xml"> 
     <link rel="icon" href="/img/favicon_0.png"> 
@@ -19,7 +22,10 @@
     
     <meta name="twitter:card" content="summary"/>
     <meta name="twitter:title" content="操作系统（一） - 点亮第一盏芯片"/>
-    <meta name="twitter:description" content="一个刚入门的嵌入式小白的成长历程,"/>
+    <meta name="twitter:description" content="一个刚入门的嵌入式小白的成长历程,第一章     计算机操作系统概述总线：
+总线（Bus）是计算机各种功能部件之间传送信息的公共通信干线，它是CPU、内存、输入输出设备传递信息的公用通道
+
+计算机的各个部件通过总线相连接，外围设备通,"/>
     
     
     
@@ -27,7 +33,10 @@
     <meta property="og:site_name" content="点亮第一盏芯片"/>
     <meta property="og:type" content="object"/>
     <meta property="og:title" content="操作系统（一） - 点亮第一盏芯片"/>
-    <meta property="og:description" content="一个刚入门的嵌入式小白的成长历程,"/>
+    <meta property="og:description" content="一个刚入门的嵌入式小白的成长历程,第一章     计算机操作系统概述总线：
+总线（Bus）是计算机各种功能部件之间传送信息的公共通信干线，它是CPU、内存、输入输出设备传递信息的公用通道
+
+计算机的各个部件通过总线相连接，外围设备通,"/>
     
 <link rel="stylesheet" href="/css/diaspora.css">
 
@@ -73,7 +82,114 @@
 
         </div>
         <div class="content markdown">
-            
+            <h2 id="第一章-计算机操作系统概述"><a href="#第一章-计算机操作系统概述" class="headerlink" title="第一章     计算机操作系统概述"></a>第一章     计算机操作系统概述</h2><h4 id="总线："><a href="#总线：" class="headerlink" title="总线："></a>总线：</h4><ul>
+<li><p><font size = 4><strong>总线（</strong>Bus<strong>）是计算机各种功能部件之间传送信息的公共通信干线，它是</strong>CPU<strong>、内存、输入输出设备传递信息的公用通道</strong></font></p>
+</li>
+<li><p><font size = 4>计算机的各个部件通过总线相连接，外围设备通过相应的接口电路再与总线相连接，从而形成了计算机硬件系统</font></p>
+</li>
+<li><p>组成</p>
+<ol>
+<li>一组控制线</li>
+<li>一组数据线</li>
+<li>一组地址线</li>
+</ol>
+</li>
+<li><p>CPU南北桥实例</p>
+</li>
+</ul>
+<pre><code class="shell"># 北桥芯片（South Bridge）是电脑主板上的一块芯片，位于CPU插座边，起连接作用；北桥在电脑里起着主导的作用，所以又称为主桥（Host Bridge）
+# 南桥芯片（South Bridge）是主板芯片组的重要组成部分，一般位于主板上离CPU插槽较远的下方，PCI插槽的附近，连接I/O总线；不与CPU直接相连，而是通过一定的方式与北桥芯片相连
+</code></pre>
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/11/01/RrhMD.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      总线实例---南北桥
+      </div>
+</center>
+
+<h4 id="简单批处理系统的操作控制"><a href="#简单批处理系统的操作控制" class="headerlink" title="简单批处理系统的操作控制"></a>简单批处理系统的操作控制</h4><ul>
+<li><font size = 4 color = Tan>引入作业控制语言，用户编写作业说明书，描述对一次计算机求解(作业)的控制</font></li>
+<li><font size = 4 color = Tan>操作员控制计算机成批输入作业，成批执行作业</font></li>
+<li><font size = 4 color = Tan>这一方式明显缩短了手工操作的时间，提高了计算机系统的使用效率</font></li>
+</ul>
+<h3 id="1-1-操作系统"><a href="#1-1-操作系统" class="headerlink" title="1.1 操作系统"></a>1.1 操作系统</h3><h4 id="1-1-1-组成"><a href="#1-1-1-组成" class="headerlink" title="1.1.1 组成"></a>1.1.1 组成</h4><pre><code class="shell">- 进程调度子系统
+- 进程通信子系统
+- 内存管理子系统
+- 设备管理子系统
+- 文件管理子系统
+- 网络通信子系统
+- 作业控制子系统
+</code></pre>
+<h4 id="1-1-2-类型"><a href="#1-1-2-类型" class="headerlink" title="1.1.2 类型"></a>1.1.2 类型</h4><pre><code class="shell">从操作控制方式看
+- 多道批处理操作系统，脱机控制方式
+- 分时操作系统，交互式控制方式
+- 实时操作系统
+</code></pre>
+<h4 id="1-1-2-应用领域"><a href="#1-1-2-应用领域" class="headerlink" title="1.1.2 应用领域"></a>1.1.2 应用领域</h4><pre><code class="shell">- 服务器操作系统
+- 并行操作系统
+- 网络操作系统
+- 分布式操作系统
+- 个人机操作系统
+- 手机操作系统
+- 嵌入式操作系统
+- 传感器操作系统
+</code></pre>
+<h3 id="1-2-资源管理视角"><a href="#1-2-资源管理视角" class="headerlink" title="1.2 资源管理视角"></a>1.2 资源管理视角</h3><h4 id="1-2-1-资源的共享方式"><a href="#1-2-1-资源的共享方式" class="headerlink" title="1.2.1 资源的共享方式"></a>1.2.1 资源的共享方式</h4><pre><code class="shell"># 独占使用方式
+$如：打印机在一个时间段内只能被一个进程独立使用
+# 并发使用方式
+$如：一个文件可以同时被多个进程一起读
+</code></pre>
+<h4 id="1-2-2-资源分配策略"><a href="#1-2-2-资源分配策略" class="headerlink" title="1.2.2 资源分配策略"></a>1.2.2 资源分配策略</h4><pre><code class="shell">- 静态分配方式：进程运行前一次拿到全部独占资源
+$资源使用效率低
+- 动态分配方式：使用资源前临时申请
+$可能产生竞争资源的死锁
+- 资源抢占方式
+$被抢夺资源的进程需要回滚执行
+</code></pre>
+<h3 id="1-2-1-4-略"><a href="#1-2-1-4-略" class="headerlink" title="1.2 ~ 1.4 略"></a>1.2 ~ 1.4 略</h3><h3 id="1-5-系统调用的实现流程"><a href="#1-5-系统调用的实现流程" class="headerlink" title="1.5 系统调用的实现流程"></a>1.5 系统调用的实现流程</h3><center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/11/01/RreJl.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      系统调用的实现流程
+      </div>
+</center>
+
+<h3 id="1-6-操作系统层次结构"><a href="#1-6-操作系统层次结构" class="headerlink" title="1.6 操作系统层次结构"></a>1.6 操作系统层次结构</h3><center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/11/01/Rrrlg.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      第一种层次结构
+      </div>
+</center>
+
+<center>
+    <img style="border-radius: 0.3125em;
+    box-shadow: 0 2px 4px 0 rgba(34,36,38,.12),0 2px 10px 0 rgba(34,36,38,.08);" 
+    src="https://i.imgtg.com/2022/11/01/RrKTB.png" width = "70%" alt=""/>
+    <br>
+    <div style="color:orange; border-bottom: 1px solid #d9d9d9;
+    display: inline-block;
+    color: #999;
+    padding: 2px;">
+      第二种层次结构
+      </div>
+</center>
             <!--[if lt IE 9]><script>document.createElement('audio');</script><![endif]-->
             <audio id="audio" loop="1" preload="auto" controls="controls" data-autoplay="false">
                 <source type="audio/mpeg" src="">
